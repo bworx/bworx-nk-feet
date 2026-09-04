@@ -4,9 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NK Feet — Medische voetzorg</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="description" content="NK Feet is uw medische pedicure in Wijgmaal (Leuven) voor eelt, kloven, likdoorns, ingegroeide nagels, schimmelnagels en algemeen voetonderhoud. Ook aan huis mogelijk.">
+<meta name="keywords" content="pedicure, medische pedicure, leuven, wijgmaal, voetverzorging, voetonderhoud, eelt, kloven, likdoorns, ingegroeide nagels, schimmelnagels, pedicure aan huis">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_BE">
+<meta property="og:title" content="NK Feet — Medische pedicure">
+<meta property="og:description" content="Medische pedicure in Wijgmaal (Leuven) voor eelt, kloven, likdoorns, ingegroeide nagels, schimmelnagels en algemeen voetonderhoud. Ook aan huis mogelijk.">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "NK Feet",
+  "description": "Medische pedicure in Wijgmaal (Leuven) voor eelt, kloven, likdoorns, ingegroeide nagels, schimmelnagels en algemeen voetonderhoud. Ook aan huis mogelijk.",
+  "telephone": "+32477717171",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Acht-Meistraat 10",
+    "postalCode": "3018",
+    "addressLocality": "Wijgmaal",
+    "addressCountry": "BE"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "13:30",
+      "closes": "18:30"
+    }
+  ]
+}
+</script>
 <style>
   :root{
     --rose: #C9A190;
@@ -36,21 +69,21 @@
   .hero{
     max-width:640px;
     margin:0 auto;
-    padding:90px 32px 60px;
+    padding:clamp(48px, 12vw, 90px) 20px 48px;
     text-align:center;
   }
-  .wordmark{font-size:2.6rem; margin-bottom:22px;}
+  .wordmark{font-size:clamp(2rem, 8vw, 2.6rem); margin-bottom:22px;}
   .eyebrow{
     text-transform:uppercase;
     letter-spacing:0.14em;
-    font-size:1.05rem;
+    font-size:clamp(0.88rem, 3vw, 1.05rem);
     font-weight:600;
     color:var(--rose-shadow);
     margin-bottom:14px;
   }
   .lead{
     margin-top:8px;
-    font-size:1.05rem;
+    font-size:clamp(0.94rem, 3vw, 1.05rem);
     color:#3A2D26;
     max-width:44ch;
     margin-left:auto;
@@ -73,12 +106,15 @@
   .btn{
     display:inline-flex;
     align-items:center;
+    justify-content:center;
     gap:8px;
     padding:13px 22px;
     text-decoration:none;
     font-size:0.94rem;
     font-weight:500;
     border-radius:2px;
+    flex:1 1 200px;
+    max-width:280px;
   }
   .btn-primary{background:var(--ink); color:var(--cream);}
   .btn-primary:hover{background:#3A2D26;}
@@ -88,7 +124,7 @@
   .info{
     background:var(--cream);
     border-top:1px solid var(--line);
-    padding:36px 32px 40px;
+    padding:32px 20px 36px;
   }
   .info-inner{
     max-width:640px;
@@ -111,6 +147,7 @@
   }
   .info-item dd a{color:var(--ink); text-decoration:none;}
   .info-item dd a:hover{text-decoration:underline;}
+  .info-item dd a.map-link{text-decoration:underline;}
 
 </style>
 </head>
@@ -118,8 +155,8 @@
 <div class="page">
 
   <div class="hero">
-    <div class="wordmark">NK Feet</div>
-    <p class="eyebrow">Medische pedicure</p>
+    <h1 class="wordmark">NK Feet</h1>
+    <h2 class="eyebrow">Medische pedicure</h2>
     <p class="lead">Eelt, kloven, likdoorns, ingegroeide nagels, schimmelnagels, ... en algemeen voetonderhoud.</p>
     <p class="lead" style="margin-top:14px;">Op locatie is, indien gewenst, ook mogelijk.</p>
     <div class="actions">
@@ -132,7 +169,7 @@
     <dl class="info-inner">
       <div class="info-item">
         <dt>Adres</dt>
-        <dd>Acht-Meistraat 10, 3018 Wijgmaal</dd>
+        <dd><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Acht-Meistraat+10,+3018+Wijgmaal" target="_blank" rel="noopener">Acht-Meistraat 10, 3018 Wijgmaal</a></dd>
       </div>
       <div class="info-item">
         <dt>Telefoon</dt>
@@ -140,7 +177,7 @@
       </div>
       <div class="info-item">
         <dt>Openingsuren</dt>
-        <dd>Ma–Vrij 13u30 – 18u30</dd>
+        <dd>Maandag – Vrijdag: 13u30 – 18u30</dd>
       </div>
     </dl>
   </div>
