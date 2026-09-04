@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NK Feet — Medische voetzorg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --rose: #C9A190;
+    --rose-deep: #8C6152;
+    --rose-shadow: #6E4B3E;
+    --ink: #241C18;
+    --cream: #F5EEE7;
+    --white: #FFFFFF;
+    --line: rgba(36,28,24,0.14);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Work Sans', sans-serif;
+    color:var(--ink);
+    background:var(--rose);
+    line-height:1.55;
+  }
+  h1,.wordmark{font-family:'Lora', serif; font-weight:600;}
+
+  .page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+
+  .hero{
+    max-width:640px;
+    margin:0 auto;
+    padding:90px 32px 60px;
+    text-align:center;
+  }
+  .wordmark{font-size:2.6rem; margin-bottom:22px;}
+  .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    font-size:1.05rem;
+    font-weight:600;
+    color:var(--rose-shadow);
+    margin-bottom:14px;
+  }
+  .lead{
+    margin-top:8px;
+    font-size:1.05rem;
+    color:#3A2D26;
+    max-width:44ch;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .area{
+    margin-top:10px;
+    font-size:0.92rem;
+    color:var(--rose-shadow);
+    font-weight:500;
+  }
+
+  .actions{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:34px;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:13px 22px;
+    text-decoration:none;
+    font-size:0.94rem;
+    font-weight:500;
+    border-radius:2px;
+  }
+  .btn-primary{background:var(--ink); color:var(--cream);}
+  .btn-primary:hover{background:#3A2D26;}
+  .btn-outline{background:transparent; border:1px solid var(--ink); color:var(--ink);}
+  .btn-outline:hover{background:rgba(36,28,24,0.06);}
+
+  .info{
+    background:var(--cream);
+    border-top:1px solid var(--line);
+    padding:36px 32px 40px;
+  }
+  .info-inner{
+    max-width:640px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px;
+    text-align:center;
+  }
+  @media(min-width:560px){
+    .info-inner{grid-template-columns:repeat(auto-fit, minmax(140px, auto)); justify-content:center; text-align:left; gap:40px;}
+  }
+  .info-item dt{
+    font-size:0.72rem;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    color:var(--rose-deep);
+    font-weight:600;
+    margin-bottom:4px;
+  }
+  .info-item dd a{color:var(--ink); text-decoration:none;}
+  .info-item dd a:hover{text-decoration:underline;}
+
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hero">
+    <div class="wordmark">NK Feet</div>
+    <p class="eyebrow">Medische pedicure</p>
+    <p class="lead">Eelt, kloven, likdoorns, ingegroeide nagels, schimmelnagels, ... en algemeen voetonderhoud.</p>
+    <p class="lead" style="margin-top:14px;">Op locatie is, indien gewenst, ook mogelijk.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="tel:0477717171">Bel 0477 71 71 71</a>
+      <a class="btn btn-outline" href="https://wa.me/32477717171" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="info">
+    <dl class="info-inner">
+      <div class="info-item">
+        <dt>Adres</dt>
+        <dd>Acht-Meistraat 10, 3018 Wijgmaal</dd>
+      </div>
+      <div class="info-item">
+        <dt>Telefoon</dt>
+        <dd><a href="tel:0477717171">0477 71 71 71</a></dd>
+      </div>
+      <div class="info-item">
+        <dt>Openingsuren</dt>
+        <dd>Ma–Vrij 13u30 – 18u30</dd>
+      </div>
+    </dl>
+  </div>
+</div>
+</body>
+</html>
