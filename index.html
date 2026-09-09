@@ -129,13 +129,13 @@
   .info-inner{
     max-width:640px;
     margin:0 auto;
-    display:grid;
-    grid-template-columns:1fr;
+    display:flex;
+    flex-direction:column;
     gap:18px;
     text-align:center;
   }
   @media(min-width:560px){
-    .info-inner{grid-template-columns:repeat(auto-fit, minmax(140px, auto)); justify-content:center; text-align:left; gap:40px;}
+    .info-inner{flex-direction:row; flex-wrap:wrap; justify-content:center; text-align:left; gap:18px 40px;}
   }
   .info-item dt{
     font-size:0.72rem;
